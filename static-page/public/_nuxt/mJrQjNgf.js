@@ -1,0 +1,1 @@
+import{_ as t,c as a,a as e,z as n,o as r}from"./BG4_PTB3.js";const c={},d={class:"px-4 py-10 m-auto sm:px-8 sm:rounded-lg max-w-4xl sm:shadow"},l={class:"max-w-none"};function m(o,s){return r(),a("div",d,[e("main",l,[n(o.$slots,"default",{},()=>[s[0]||(s[0]=e("h1",{class:"text-2xl"},"Page not found",-1))])])])}const f=t(c,[["render",m]]);export{f as default};
