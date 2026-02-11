@@ -1,1 +1,0 @@
-import{_ as s,c as o,z as r,o as t}from"./BG4_PTB3.js";const n={};function c(e,a){return t(),o("th",null,[r(e.$slots,"default")])}const l=Object.assign(s(n,[["render",c]]),{__name:"ProseTh"});export{l as default};
