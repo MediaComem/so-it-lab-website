@@ -29,6 +29,7 @@ const appConfig = useAppConfig();
   border-radius: 12px;
   border: 1px solid var(--dark, #252525);
   width: 135px;
+  font-family: Aleo;
 
 }
 .menu-item.active, .menu-item:hover {

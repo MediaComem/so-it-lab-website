@@ -9,6 +9,11 @@ body {
   background-image: radial-gradient(circle, #252525 1px, transparent 1px);
   background-size: 23px 23px;
   background-attachment: fixed;
+
+  font-family: Aleo;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 140%;
 }
 
 .top-section {
@@ -64,11 +69,9 @@ img{
   }
 }
 
-.prose:not(.one-section)  {
+.prose:not(.one-section)
+.prose:not(.home)  {
     color: #252525;
-    font-family: Aleo;
-    font-size: 23px;
-    line-height: 140%;
 
     h1 {
       padding: 10px;
