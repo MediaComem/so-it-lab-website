@@ -13,5 +13,17 @@ export default defineContentConfig({
         layout: z.string(),
       }),
     }),
+    events: defineCollection({
+      type: 'data',
+      source: 'events/*.yml',
+      schema: z.object({
+        title: z.string(),
+        location: z.string(),
+        date: z.string(),
+        locationPending: z.boolean().optional(),
+        speakers: z.array(z.string()),
+        description: z.string(),
+      }),
+    }),
   },
 })

@@ -8,10 +8,17 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="sm:pt-6 sm:pb-10">
+  <div>
     <Html lang="en" />
     <NuxtLoadingIndicator />
-    <AppNavbar />
-    <NuxtPage />
+    <div class="top-section fixed top-0 left-0 right-0 z-50 ">
+      <header class="flex justify-center" style="padding-top: 20px; padding-bottom: 20px;">
+        <img src="/logo.svg" alt="Logo">
+      </header>
+      <AppNavbar />
+    </div>
+    <div class="fixed inset-0 pt-45 overflow-y-auto sm:pb-10">
+      <NuxtPage />
+    </div>
   </div>
 </template>

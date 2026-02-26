@@ -7,49 +7,36 @@ const appConfig = useAppConfig();
 </script>
 
 <template>
-  <div class="flex justify-between px-4 py-4 mx-auto sm:px-8 max-w-4xl">
+  <div class="flex justify-center gap-8 px-4 py-4 mx-auto sm:px-8 max-w-4xl">
     <!-- Navigation -->
-    <div class="text-gray-700 dark:text-gray-200">
+    <div class="flex justify-center gap-8">
       <NuxtLink
         v-for="link in navigation"
-        :key="link.path" class="mr-6"
+        :key="link.path"
         :to="link.path"
-        active-class="font-bold"
+        class="menu-item text-center"
+        active-class="active"
       >{{ link.title }}</NuxtLink>
-    </div>
-    <!-- Social icons & Color Mode -->
-    <div class="text-gray-500 space-x-3 transition">
-      <a
-        v-if="appConfig.socials?.twitter || appConfig.socials?.x"
-        class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300"
-        :href="`https://x.com/${appConfig.socials?.twitter || appConfig.socials?.x}`"
-        title="X"
-      >
-        <Icon class="size-5" name="i-simple-icons-x" />
-      </a>
-      <a
-        v-if="appConfig.socials?.github"
-        class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300"
-        :href="`https://github.com/${appConfig.socials?.github}`"
-        title="GitHub"
-      >
-        <Icon class="size-5" name="i-simple-icons-github" />
-      </a>
-      <a
-        v-if="appConfig.socials?.mastodon"
-        class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300"
-        :href="`https://elk.zone/${appConfig.socials?.mastodon}`" title="Mastodon"
-      >
-        <Icon class="size-5" name="i-simple-icons-mastodon" />
-      </a>
-      <a
-        v-if="appConfig.socials?.bluesky"
-        class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300"
-        :href="`https://bsky.app/profile/${appConfig.socials?.bluesky}`" title="Bluesky"
-      >
-        <Icon class="size-5" name="i-simple-icons-bluesky" />
-      </a>
-      <ColorModeSwitch class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300" />
     </div>
   </div>
 </template>
+
+
+<style>
+.menu-item {
+  background-color: #f3f3f3;
+  color: #252525;
+  border-radius: 12px;
+  border: 1px solid var(--dark, #252525);
+  width: 135px;
+
+}
+.menu-item.active, .menu-item:hover {
+  background-color: #17AB59;
+  color:white;
+  border-radius: 12px;
+  border: 1px solid var(--dark, #252525);
+  /* sharp shadow S */
+  box-shadow: 2px 2px 0 0 #252525;
+}
+</style>

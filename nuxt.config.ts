@@ -25,5 +25,6 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2025-02-19',
 
-  vite: { plugins: [tailwindcss()] },
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  vite: { plugins: [tailwindcss() as any] },
 })
