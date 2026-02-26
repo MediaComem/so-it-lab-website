@@ -31,14 +31,16 @@ const { data: events } = await useAsyncData(() =>
 <style scoped>
 .event-list {
   background: var(--light, #F3F3F3);
-  border: 1px solid #ddd;
+  border: 1px solid var(--dark, #252525);
   border-radius: 12px;
   padding: 1rem 2rem;
+  /* sharp shadow */
+  box-shadow: 4px 4px 0 0 #252525;
 }
 .event-item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 1.5rem 0;
   border-bottom: 1px solid #252525;
   gap: 2rem;
@@ -50,7 +52,7 @@ const { data: events } = await useAsyncData(() =>
 .speakers { color: #555; font-size: 0.9rem; margin-bottom: 0.5rem; }
 .description { color: #333; font-size: 0.9rem; }
 
-.event-meta { display: flex; gap: 0.5rem; align-items: center; flex-shrink: 0; }
+.event-meta { display: flex; gap: 0.5rem; align-items: flex-start; flex-shrink: 0; }
 
 .badge {
   padding: 0.4rem 1rem;

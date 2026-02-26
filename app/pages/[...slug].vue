@@ -27,6 +27,7 @@ useSeoMeta(page.value?.seo || {})
       v-if="page"
       :value="page"
       class="prose"
+      :class="page?.pageClass"
     />
   </NuxtLayout>
 </template>

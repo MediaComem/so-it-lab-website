@@ -45,7 +45,26 @@ main div {
   margin-right: auto;
 }
 
-.prose {
+img{
+  max-width: 240px;
+  margin-left: 40px;
+}
+
+.one-section {
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--dark, #252525);
+  background: var(--light, #F3F3F3);
+
+  /* sharp shadow */
+  box-shadow: 4px 4px 0 0 #252525;
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.prose:not(.one-section)  {
     color: #252525;
     font-family: Aleo;
     font-size: 23px;

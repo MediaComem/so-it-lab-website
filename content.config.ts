@@ -11,6 +11,7 @@ export default defineContentConfig({
       source: '**',
       schema: z.object({
         layout: z.string(),
+        pageClass: z.string().optional(),
       }),
     }),
     events: defineCollection({
