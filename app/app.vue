@@ -5,6 +5,13 @@ useSeoMeta({
   ogImage: cover,
   twitterCard: 'summary_large_image',
 })
+
+useHead({
+  link: [
+    { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg', media: '(prefers-color-scheme: light)' },
+    { rel: 'icon', type: 'image/svg+xml', href: '/favicon-dark.svg', media: '(prefers-color-scheme: dark)' },
+  ],
+})
 </script>
 
 <template>

@@ -1,14 +1,6 @@
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
-  app: {
-    head: {
-      link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg', media: '(prefers-color-scheme: light)' },
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon-dark.svg', media: '(prefers-color-scheme: dark)' },
-      ],
-    },
-  },
   modules: [
     '@nuxt/content',
     '@nuxt/icon',
