@@ -7,9 +7,9 @@ const appConfig = useAppConfig();
 </script>
 
 <template>
-  <div class="flex justify-center gap-8 px-4 py-4 mx-auto sm:px-8 max-w-4xl">
+  <div class="px-4 py-4 mx-auto sm:px-8 max-w-4xl">
     <!-- Navigation -->
-    <div class="flex justify-center gap-8">
+    <div class="flex gap-2 sm:gap-8 sm:justify-center">
       <NuxtLink
         v-for="link in navigation"
         :key="link.path"
@@ -28,9 +28,19 @@ const appConfig = useAppConfig();
   color: #252525;
   border-radius: 12px;
   border: 1px solid var(--dark, #252525);
-  width: 135px;
   font-family: Aleo;
+  flex: 1;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+}
 
+@media (min-width: 640px) {
+  .menu-item {
+    flex: none;
+    width: 135px;
+    font-size: 1rem;
+    padding: 0;
+  }
 }
 .menu-item.active, .menu-item:hover {
   background-color: #17AB59;

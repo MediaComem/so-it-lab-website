@@ -25,10 +25,10 @@ body {
 .top-section::after {
   content: '';
   position: absolute;
-  bottom: -20px;
+  bottom: -10px;
   left: 0;
   right: 0;
-  height: 20px;
+  height: 10px;
   background: linear-gradient(to bottom, #F3F3F3, transparent);
   pointer-events: none;
 }

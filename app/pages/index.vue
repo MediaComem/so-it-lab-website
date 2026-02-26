@@ -2,7 +2,7 @@
   <div class="prose home px-4 pb-10 m-auto sm:px-8 sm:rounded-lg max-w-4xl">
 
     <!-- Hero -->
-    <section class="py-14">
+    <section class="">
         <h1 class="text-center">
           Le Sustainable &amp; Open IT Lab
         </h1>
@@ -91,7 +91,11 @@
 </script>
 
 <style>
-
+.prose {
+    p {
+        margin: 0px;
+    }
+}
 section:not(.subsections),
 .subsection {
   border-radius: 12px;
@@ -106,4 +110,13 @@ section:not(.subsections),
   margin-top: 1.25em;
   margin-bottom: 1.25em;
 }
+
+.subsection {
+    margin-top: 0px;;
+}
+
+h2 {
+  margin-top: 0px;
+}
+
 </style>

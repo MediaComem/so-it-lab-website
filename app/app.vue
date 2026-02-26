@@ -12,7 +12,7 @@ useSeoMeta({
     <Html lang="en" />
     <NuxtLoadingIndicator />
     <div class="top-section fixed top-0 left-0 right-0 z-50 ">
-      <header class="flex justify-center" style="padding-top: 20px; padding-bottom: 20px;">
+      <header class="flex justify-center" style="padding-top: 20px; padding-bottom: 10px;">
         <NuxtLink to="/"><img src="/logo.svg" alt="Logo"></NuxtLink>
       </header>
       <AppNavbar />
