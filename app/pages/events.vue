@@ -64,10 +64,11 @@ const { data: events } = await useAsyncData(() =>
 }
 
 .badge {
-  padding: 0.4rem 1rem;
+  padding: 0.2rem 1rem;
   border-radius: 999px;
   font-size: 0.85rem;
   font-weight: 500;
+  line-height: 1.4rem;
 }
 .badge.location { background: #F2D73F; color: #333; }
 .badge.location.pending { background: #F2D73F; }
