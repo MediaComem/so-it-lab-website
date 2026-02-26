@@ -96,5 +96,8 @@ main div {
       /* sharp shadow */
       box-shadow: 4px 4px 0 0 #252525;
     }
+    li {
+      list-style-type: none;
+    }
 }
  
