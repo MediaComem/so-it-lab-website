@@ -14,7 +14,7 @@ const { data: events } = await useAsyncData(() =>
         >
         <div class="event-main">
             <h2>{{ event.title }}</h2>
-            <p class="speakers">{{ event.speakers?.join('   ') }}</p>
+            <p class="speakers">{{ event.speakers?.join('\n') }}</p>
             <p class="description">{{ event.description }}</p>
         </div>
         <div class="event-meta">
@@ -49,7 +49,7 @@ const { data: events } = await useAsyncData(() =>
 
 .event-main { flex: 1; width: 100%; }
 .event-main h2 { font-size: 1.1rem; margin-bottom: 0.3rem; }
-.speakers { color: #555; font-size: 0.9rem; margin-bottom: 0.5rem; }
+.speakers { color: #555; font-size: 0.9rem; margin-bottom: 0.5rem; line-height: 1.2rem; white-space: pre-line; }
 .description { color: #333; font-size: 0.9rem; line-height: 1.2rem;}
 
 .event-meta { display: flex; gap: 0.5rem; align-items: flex-start; flex-shrink: 0; order: -1; }
