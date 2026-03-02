@@ -44,24 +44,15 @@ const { data: events } = await useAsyncData(() =>
   border-bottom: 1px solid #252525;
   gap: 0.75rem;
 }
+
 .event-item:last-child { border-bottom: none; }
 
 .event-main { flex: 1; width: 100%; }
 .event-main h2 { font-size: 1.1rem; margin-bottom: 0.3rem; }
 .speakers { color: #555; font-size: 0.9rem; margin-bottom: 0.5rem; }
-.description { color: #333; font-size: 0.9rem; }
+.description { color: #333; font-size: 0.9rem; line-height: 1.2rem;}
 
 .event-meta { display: flex; gap: 0.5rem; align-items: flex-start; flex-shrink: 0; order: -1; }
-
-@media (min-width: 640px) {
-  .event-item {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
-  }
-  .event-meta { order: 0; }
-}
 
 .badge {
   padding: 0.2rem 1rem;

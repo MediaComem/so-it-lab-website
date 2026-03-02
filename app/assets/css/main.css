@@ -69,6 +69,14 @@ img{
   }
 }
 
+.prose {
+  max-width: var(--container-4xl);
+  p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+}
+
 .prose:not(.one-section)
 .prose:not(.home)  {
     color: #252525;
@@ -100,7 +108,6 @@ img{
       border-radius: 12px;
       border: 1px solid var(--dark, #252525);
       background: var(--light, #F3F3F3);
-
       /* sharp shadow */
       box-shadow: 4px 4px 0 0 #252525;
     }

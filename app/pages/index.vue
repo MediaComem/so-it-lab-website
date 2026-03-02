@@ -4,7 +4,7 @@
     <!-- Hero -->
     <section class="">
         <h1 class="text-center">
-          Le Sustainable &amp; Open IT Lab
+          Sustainable &amp; Open IT Lab
         </h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <p>
