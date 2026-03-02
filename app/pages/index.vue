@@ -64,7 +64,11 @@
             <p>
               Basés sur des technologies libres et open source et/ou centrés sur des problématiques
               d'informatique low-tech/durable, nous conseillons/soutenons l'émergence de projets
-              d'étudiant·e·s et de collègues.
+              d'étudiant·e·s et de collègues. Par exemple :
+              <ul>
+                <li>Un guide anti-obsolescence</li>
+                <li>Un autre ami des CHATONS</li>
+              </ul>                  
             </p>
           </div>
 
