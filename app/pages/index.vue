@@ -63,12 +63,9 @@
             <h2>Incubation de projets</h2>
             <p>
               Basés sur des technologies libres et open source et/ou centrés sur des problématiques
-              d'informatique low-tech/durable, nous conseillons/soutenons l'émergence de projets
-              d'étudiant·e·s et de collègues. Par exemple :
-              <ul>
-                <li>Un guide anti-obsolescence</li>
-                <li>Un autre ami des CHATONS</li>
-              </ul>                  
+              d'informatique low-tech/durable, nous conseillons/soutenons l'émergence de projets, 
+              y compris d'étudiant·e·s (par exemple : réparabilité et lutte contre l’obscolescence logiciel;
+              un autre ami académique des CHATONS; etc</li>
             </p>
           </div>
 
