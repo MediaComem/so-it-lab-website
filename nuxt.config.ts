@@ -7,7 +7,13 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxtjs/color-mode',
   ],
-
+  experimental: {
+    defaults: {
+      nuxtLink: {
+        trailingSlash: 'append' // or 'remove'
+      }
+    }
+  },
   css: ['assets/css/main.css'],
   colorMode: { classSuffix: '' },
   content: {
