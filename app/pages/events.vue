@@ -18,8 +18,11 @@ const { data: events } = await useAsyncData(() =>
             <p class="description">{{ event.description }}</p>
         </div>
         <div class="event-meta">
-            <span class="badge location" :class="{ pending: event.locationPending }">
+            <span class="badge location">
             {{ event.location }}
+            </span>
+            <span class="badge institution">
+            {{ event.institution }}
             </span>
             <span class="badge date">{{ event.date }}</span>
         </div>
@@ -48,7 +51,7 @@ const { data: events } = await useAsyncData(() =>
 .event-item:last-child { border-bottom: none; }
 
 .event-main { flex: 1; width: 100%; }
-.event-main h2 { font-size: 1.1rem; margin-bottom: 0.3rem; }
+.event-main h2 { font-size: 1.2rem; margin-bottom: 0.3rem; }
 .speakers { color: #555; font-size: 0.9rem; margin-bottom: 0.5rem; line-height: 1.2rem; white-space: pre-line; }
 .description { color: #333; font-size: 0.9rem; line-height: 1.2rem;}
 
@@ -62,6 +65,6 @@ const { data: events } = await useAsyncData(() =>
   line-height: 1.4rem;
 }
 .badge.location { background: #F2D73F; color: #333; }
-.badge.location.pending { background: #F2D73F; }
+.badge.institution { background: #17AB59; color: #fff; }
 .badge.date { background: #222; color: #fff; }
 </style>

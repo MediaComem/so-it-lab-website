@@ -20,6 +20,7 @@ export default defineContentConfig({
       schema: z.object({
         title: z.string(),
         location: z.string(),
+        institution: z.string(),
         date: z.string(),
         locationPending: z.boolean().optional(),
         speakers: z.array(z.string()),
