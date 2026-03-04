@@ -33,7 +33,7 @@ body {
   pointer-events: none;
 }
 
-strong.old {
+strong {
   background: #F2D73F;
   mix-blend-mode: darken;
   color: #252525;
@@ -41,7 +41,7 @@ strong.old {
   line-height: 140%;
 }
 
-strong {
+strong.new {
   color: #FFC420;
   font-weight: 700;
   line-height: 140%;
