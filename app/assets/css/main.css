@@ -50,11 +50,23 @@ main div {
   margin-right: auto;
 }
 
+table {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: none;
+  tr {
+    border-bottom-width: 0px;
+  }
+}
+
 img{
   max-width: 240px;
   margin-left: 40px;
   &.noMargin {
     margin: 0px;
+  }
+  &.margin {
+    margin: 40px;
   }
 }
 
