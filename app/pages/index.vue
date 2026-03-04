@@ -6,7 +6,8 @@
         <h1 class="text-center">
           Le Sustainable &amp; Open IT Lab
         </h1>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <!-- <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">-->
+        <div>
           <p>
             En 2025, le <i>Sustainable &amp; Open IT Lab</i> est né de la volonté de quelques collègues de la
             Haute école spécialisée de Suisse Occidentale (HES-SO)
@@ -14,8 +15,10 @@
             réflexion et de projets à celles et ceux préoccupé·e·s par la mise en œuvre d'un
             numérique <strong>libre et souverain</strong> d'une part, et
             <strong>écologiquement soutenable</strong> d'autre part.
+            <!--
           </p>
           <p>
+            -->
             Espace de <strong>mise en commun</strong> et <strong>pôle d'expertise</strong>, arrimé aux formations d'ingénieur·e·s desquelles il émane, 
             le so IT Lab a pour objectif de mutualiser et visibiliser les forces autour des savoirs et outils existants sur ces deux grandes questions centrales pour le futur de nos sociétés.
           </p>

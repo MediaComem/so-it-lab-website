@@ -33,11 +33,17 @@ body {
   pointer-events: none;
 }
 
-strong {
+strong.old {
   background: #F2D73F;
   mix-blend-mode: darken;
   color: #252525;
   font-weight: 500;
+  line-height: 140%;
+}
+
+strong {
+  color: #FFC420;
+  font-weight: 700;
   line-height: 140%;
 }
 
@@ -58,6 +64,9 @@ table {
     border-bottom-width: 0px;
   }
 }
+*, ::after, ::before {
+	border: none;
+}
 
 img{
   max-width: 240px;
@@ -65,8 +74,10 @@ img{
   &.noMargin {
     margin: 0px;
   }
-  &.margin {
+
+  &.logo {
     margin: 40px;
+    height: 60px;
   }
 }
 
