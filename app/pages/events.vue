@@ -6,6 +6,15 @@ const { data: events } = await useAsyncData(() =>
 
 <template>
   <div class="px-4 pb-10 m-auto sm:px-8 sm:rounded-lg max-w-4xl">
+    <div class="intro">
+    L'organisation de <i>rencontres publiques</i> constitue un volet important des missions que s'est données le <i>Sustainable & Open IT Lab</i>. 
+    Autour d'une ou plusieurs personnalités marquantes et de manière itinérante dans les hautes écoles de Suisse romande, 
+    l'idée est de proposer à chaque fois une occasion conviviale de rencontres. 
+    Sauf exception, les présentations sont ainsi toujours suivies d'un <strong>moment d'échange autour d'une petite restauration</strong>, 
+    auquel tou·te·s les participant·e·s sont convié·e·s. Pour dimensionner au mieux salles et besoins en catering, <strong>l'inscription est donc obligatoire</strong>. 
+    Et pour celles et ceux qui ne pourraient pas se joindre à nous physiquement (snif !), il est toujours possible de suivre les évènements en <strong>live streaming</strong> ! 
+    Sur des thématiques ciblées, le <i>Sustainable & Open IT Lab</i> organise aussi régulièremement des <i>journées d'étude</i> qui ont pour but de rassembler et de nourrir sa communauté de pratiques.
+    </div>
     <div class="event-list">
         <div
         v-for="event in events"
@@ -31,6 +40,7 @@ const { data: events } = await useAsyncData(() =>
 </template>
 
 <style scoped>
+.intro, 
 .event-list {
   background: var(--light, #F3F3F3);
   border: 1px solid var(--dark, #252525);
@@ -38,7 +48,12 @@ const { data: events } = await useAsyncData(() =>
   padding: 1rem 2rem;
   /* sharp shadow */
   box-shadow: 4px 4px 0 0 #252525;
+  margin-bottom: 20px;
 }
+.intro {
+  font-size: 1rem; line-height: 1.2rem;
+}
+
 .event-item {
   display: flex;
   flex-direction: column;
