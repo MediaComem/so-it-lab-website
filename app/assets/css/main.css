@@ -106,6 +106,9 @@ img.noMargin {
     font-size: 1.2rem;
     line-height: 1.4rem;
   }
+  p.subblock {
+    font-size: 1.1rem;
+  }
 }
 
 .prose:not(.one-section)

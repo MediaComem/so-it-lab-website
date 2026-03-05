@@ -15,8 +15,7 @@ const { data: events } = await useAsyncData(() =>
         <div class="event-main">
             <h2>{{ event.title }}</h2>
             <p class="speakers">{{ event.speakers?.join('\n') }}</p>
-            <p class="description">{{ event.description }}</p>
-        </div>
+            <p class="description" v-html="event.description"/></div>
         <div class="event-meta">
             <span class="badge location">
             {{ event.location }}
@@ -55,7 +54,7 @@ const { data: events } = await useAsyncData(() =>
 .speakers { color: #555; font-size: 0.9rem; margin-bottom: 0.5rem; line-height: 1.2rem; white-space: pre-line; }
 .description { color: #333; font-size: 0.9rem; line-height: 1.2rem;}
 
-.event-meta { display: flex; gap: 0.5rem; align-items: flex-start; flex-shrink: 0; order: -1; }
+.event-meta { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: flex-start; flex-shrink: 0; order: -1; }
 
 .badge {
   padding: 0.2rem 1rem;
@@ -67,4 +66,7 @@ const { data: events } = await useAsyncData(() =>
 .badge.location { background: #F2D73F; color: #333; }
 .badge.institution { background: #17AB59; color: #fff; }
 .badge.date { background: #222; color: #fff; }
+:deep(a) {
+  color: var(--color-indigo-500);
+}
 </style>
