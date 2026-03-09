@@ -7,13 +7,10 @@ const { data: events } = await useAsyncData(() =>
 <template>
   <div class="px-4 pb-10 m-auto sm:px-8 sm:rounded-lg max-w-4xl">
     <div class="intro">
-    L'organisation de <i>rencontres publiques</i> constitue un volet important des missions que s'est données le <i>Sustainable & Open IT Lab</i>. 
-    Autour d'une ou plusieurs personnalités marquantes et de manière itinérante dans les hautes écoles de Suisse romande, 
-    l'idée est de proposer à chaque fois une occasion conviviale de rencontres. 
-    Sauf exception, les présentations sont ainsi toujours suivies d'un <strong>moment d'échange autour d'une petite restauration</strong>, 
-    auquel tou·te·s les participant·e·s sont convié·e·s. Pour dimensionner au mieux salles et besoins en catering, <strong>l'inscription est donc obligatoire</strong>. 
-    Et pour celles et ceux qui ne pourraient pas se joindre à nous physiquement (snif !), il est toujours possible de suivre les évènements en <strong>live streaming</strong> ! 
-    Sur des thématiques ciblées, le <i>Sustainable & Open IT Lab</i> organise aussi régulièremement des <i>journées d'étude</i> qui ont pour but de rassembler et de nourrir sa communauté de pratiques.
+          <p>Ces <i>rencontres publiques</i> constitue un volet important des missions que s'est données le <i>Sustainable & Open IT Lab</i>. 
+          C'est avec une ou plusieurs personnalités marquantes que sont proposées ces occasions conviviales de rencontres. </p>
+          <p>Sauf exception, chaque rencontre est suivie d'un <strong>moment d'échange autour d'une petite restauration</strong>. Pour dimensionner au mieux salles et besoins en catering, <strong>l'inscription est donc obligatoire</strong>.</p>
+          <p>Profitez de ce programme itinérant dans les Hautes Ecoles de Suisse romande pour rejoindre physiquement ces rencontres. Toutefois, elles pourront être suivies en <strong>live streaming</strong> !</p>
     </div>
     <div class="event-list">
         <div
@@ -52,6 +49,12 @@ const { data: events } = await useAsyncData(() =>
 }
 .intro {
   font-size: 1rem; line-height: 1.2rem;
+}
+
+.intro p {
+  line-height: 1.4rem;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
 }
 
 .event-item {
