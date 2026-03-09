@@ -25,6 +25,7 @@ export default defineContentConfig({
         locationPending: z.boolean().optional(),
         speakers: z.array(z.string()),
         description: z.string(),
+        registerURL: z.string()
       }),
     }),
   },
