@@ -25,6 +25,7 @@ const { data: events } = await useAsyncData(() =>
             <h2>{{ event.title }}</h2>
             <p class="speakers">{{ event.speakers?.join('\n') }}</p>
             <p class="description" v-html="event.description"/></div>
+            <p class="register"><strong>Inscription obligatoire (en présence et à distance) : <a :href="'https://framaforms.org/' + event.registerURL">formulaire d'inscription</a></strong></p> 
         <div class="event-meta">
             <span class="badge location">
             {{ event.location }}
@@ -68,6 +69,8 @@ const { data: events } = await useAsyncData(() =>
 .event-main h2 { font-size: 1.2rem; margin-bottom: 0.3rem; }
 .speakers { color: #555; font-size: 0.9rem; margin-bottom: 0.5rem; line-height: 1.2rem; white-space: pre-line; }
 .description { color: #333; font-size: 0.9rem; line-height: 1.2rem;}
+.register { color: #333; font-size: 0.9rem; line-height: 3rem;}
+.register a { text-decoration-line: underline; }
 
 .event-meta { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: flex-start; flex-shrink: 0; order: -1; }
 
