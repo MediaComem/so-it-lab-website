@@ -7,10 +7,9 @@ const { data: events } = await useAsyncData(() =>
 <template>
   <div class="px-4 pb-10 m-auto sm:px-8 sm:rounded-lg max-w-4xl">
     <div class="intro">
-          <p>Ces <i>rencontres publiques</i> constitue un volet important des missions que s'est données le <i>Sustainable & Open IT Lab</i>. 
-          C'est avec une ou plusieurs personnalités marquantes que sont proposées ces occasions conviviales de rencontres. </p>
-          <p>Sauf exception, chaque rencontre est suivie d'un <strong>moment d'échange autour d'une petite restauration</strong>. Pour dimensionner au mieux salles et besoins en catering, <strong>l'inscription est donc obligatoire</strong>.</p>
-          <p>Profitez de ce programme itinérant dans les Hautes Ecoles de Suisse romande pour rejoindre physiquement ces rencontres. Toutefois, elles pourront être suivies en <strong>live streaming</strong> !</p>
+          <p>L'organisation de <b>rencontres publiques</b> constitue un volet important des missions que s'est données le Sustainable & Open IT Lab.</p>
+          <p>À chaque fois, nous invitons une ou plusieurs personnalités marquantes et sauf exception chaque rencontre est suivie d'un moment d'échange autour d'une petite restauration. Afin de dimensionner au mieux salles et besoins en catering, l'inscription est obligatoire.</p>
+          <p>Pour aller à la rencontre des publics intéressés et créer des liens en vrai, le so IT Lab se déplace dans les hautes écoles de Suisse romande. Celles et ceux qui ne pourraient pas se joindre à nous physiquement ont toutefois la possibilité de suivre nos évènement en live streaming !</p>
     </div>
     <div class="event-list">
         <div
