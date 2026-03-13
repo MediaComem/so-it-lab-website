@@ -52,8 +52,10 @@ const { data: events } = await useAsyncData(() =>
   font-weight: 700;
 }
 
-:global(.dark) .description :deep(strong) {
+:global(.dark) {
+.description :deep(strong) {
   color: #F3F3F3;
+} 
 }
 .intro {
   font-size: 1rem; line-height: 1.2rem;
