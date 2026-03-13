@@ -40,6 +40,9 @@ strong {
   font-weight: 500;
   line-height: 140%;
 }
+:global(.dark) strong {
+  color: #F3F3F3;
+}
 
 strong.new {
   color: #FFC420;
