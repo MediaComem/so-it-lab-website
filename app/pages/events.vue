@@ -7,9 +7,9 @@ const { data: events } = await useAsyncData(() =>
 <template>
   <div class="px-4 pb-10 m-auto sm:px-8 sm:rounded-lg max-w-4xl">
     <div class="intro">
-          <p>L'organisation de <b>rencontres publiques</b> constitue un volet important des missions que s'est données le Sustainable & Open IT Lab.</p>
-          <p>À chaque fois, nous invitons une ou plusieurs personnalités marquantes et sauf exception chaque rencontre est suivie d'un moment d'échange autour d'une petite restauration. Afin de dimensionner au mieux salles et besoins en catering, l'inscription est obligatoire.</p>
-          <p>Pour aller à la rencontre des publics intéressés et créer des liens en vrai, le so IT Lab se déplace dans les hautes écoles de Suisse romande. Celles et ceux qui ne pourraient pas se joindre à nous physiquement ont toutefois la possibilité de suivre nos évènement en live streaming !</p>
+          <p>L'organisation de <strong>rencontres publiques</strong> constitue un volet important des missions que s'est données le <i>Sustainable & Open IT Lab</i>.</p>
+          <p>À chaque fois, nous invitons une ou plusieurs personnalités marquantes et sauf exception chaque rencontre est suivie d'un moment d'échange autour d'une petite restauration. Afin de dimensionner au mieux salles et besoins en catering, <strong>l'inscription est obligatoire</strong>.</p>
+          <p>Pour aller à la rencontre des publics intéressés et créer des liens en vrai, le so IT Lab se déplace dans les hautes écoles de Suisse romande. Celles et ceux qui ne pourraient pas se joindre à nous physiquement ont toutefois la possibilité de suivre nos évènement en <strong>live streaming</strong> !</p>
     </div>
     <div class="event-list">
         <div
@@ -45,6 +45,11 @@ const { data: events } = await useAsyncData(() =>
   /* sharp shadow */
   box-shadow: 4px 4px 0 0 #252525;
   margin-bottom: 20px;
+}
+.description :deep(strong) {
+  background: initial;
+  color: #252525;
+  font-weight: 700;
 }
 .intro {
   font-size: 1rem; line-height: 1.2rem;
