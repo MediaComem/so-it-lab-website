@@ -12,8 +12,33 @@ const { data: events } = await useAsyncData(() =>
           <p>Pour aller <b>à la rencontre des publics intéressés et créer des liens en vrai</b>, le so IT Lab se déplace dans les hautes écoles de Suisse romande. Celles et ceux qui ne pourraient pas se joindre à nous physiquement ont toutefois la possibilité de suivre nos évènement en <b>live streaming</b> !</p>
     </div>
     <div class="event-list">
+        <h2 class="text-center">Evènements à venir</h2>
+
         <div
-        v-for="event in events"
+        v-for="event in events.filter(e => !e.past)"
+        :key="event.title"
+        class="event-item"
+        >
+        <div class="event-main">
+            <h2>{{ event.title }}</h2>
+            <p class="speakers">{{ event.speakers?.join('\n') }}</p>
+            <p class="description" v-html="event.description"/></div>
+          <div class="event-meta">
+              <span class="badge location">
+              {{ event.location }}
+              </span>
+              <span class="badge institution">
+              {{ event.institution }}
+              </span>
+              <span class="badge date">{{ event.date }}</span>
+          </div>
+        </div>
+    </div>
+    <div class="event-list">
+        <h2 class="text-center">Evènements passés</h2>
+
+        <div
+        v-for="event in events.filter(e => e.past)"
         :key="event.title"
         class="event-item"
         >

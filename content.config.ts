@@ -22,7 +22,7 @@ export default defineContentConfig({
         location: z.string(),
         institution: z.string(),
         date: z.string(),
-        locationPending: z.boolean().optional(),
+        past: z.boolean(),
         speakers: z.array(z.string()),
         description: z.string(),
       }),
