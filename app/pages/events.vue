@@ -12,7 +12,7 @@ const { data: events } = await useAsyncData(() =>
           <p>Pour aller <b>à la rencontre des publics intéressés et créer des liens en vrai</b>, le so IT Lab se déplace dans les hautes écoles de Suisse romande. Celles et ceux qui ne pourraient pas se joindre à nous physiquement ont toutefois la possibilité de suivre nos évènement en <b>live streaming</b> !</p>
     </div>
     <div class="event-list">
-        <h2 class="text-center">Evènements à venir</h2>
+        <h2 class="text-center">Evénements à venir</h2>
 
         <div
         v-for="event in events.filter(e => !e.past)"
@@ -35,7 +35,7 @@ const { data: events } = await useAsyncData(() =>
         </div>
     </div>
     <div class="event-list">
-        <h2 class="text-center">Evènements passés</h2>
+        <h2 class="text-center">Evénements passés</h2>
 
         <div
         v-for="event in events.filter(e => e.past)"
