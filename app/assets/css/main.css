@@ -54,6 +54,10 @@ strong.new {
   @apply text-indigo-500 dark:text-indigo-400;
 }
 
+.blue-he-arc {
+  color: #0679c6
+}
+
 main div {
   margin-left: auto;
   margin-right: auto;
