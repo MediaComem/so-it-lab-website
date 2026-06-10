@@ -72,7 +72,7 @@
               conseillons/soutenons l'émergence de projets de collègues et
               d'étudiant·e·s. Nous travaillons actuellement activement à nos deux
               premières initiatives : un grenier d’outils libres pour la gestion de
-              filières d’enseignement et un espace de coaching pour les étudiant·e·s
+              filières d’enseignement et un atelier de self-hosting pour les étudiant·e·s
               désireux/euses de s'essayer à l'installation et à la maintenance de
               solutions logicielles ouvertes.                 
             </p>
