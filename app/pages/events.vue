@@ -38,7 +38,7 @@ const { data: events } = await useAsyncData(() =>
         <h2 class="text-center">Evénements passés</h2>
 
         <div
-        v-for="event in events.filter(e => e.past)"
+        v-for="event in events.filter(e => e.past).reverse()"
         :key="event.title"
         class="event-item"
         >
