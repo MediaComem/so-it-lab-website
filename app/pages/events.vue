@@ -13,7 +13,11 @@ const { data: events } = await useAsyncData(() =>
     </div>
     <div class="event-list">
         <h2 class="text-center">Evénements à venir</h2>
-
+       <div v-if="events.filter(e => !e.past).length === 0">
+        <div class="event-main">
+           <h2>Nos prochains événements seront annoncés ici.</h2>
+        </div>       
+       </div>
         <div
         v-for="event in events.filter(e => !e.past)"
         :key="event.title"
